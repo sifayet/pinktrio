@@ -1,0 +1,365 @@
+/* 
+    Author: Sifayet Ullah,
+    version: 1.0
+
+
+    Table Of Contents
+============================
+    1. header section
+    2. banner section
+    3. events section
+    4. about section
+    5. team section
+    6. gallery section
+    7. videos section
+    8. contact section
+    9. footer section
+ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section_heading h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  border-bottom: 5px solid #000;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.section_heading h2 i {
+  color: #FF679B;
+}
+
+/* header section start */
+.customnav {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid #fff;
+}
+
+.navbar-light .navbar-toggler:hover {
+  border: 1px solid #FF679B;
+}
+
+.navbar-light .navbar-toggler i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-toggler:hover i {
+  color: #FF679B;
+}
+
+.customNav_fixed_top {
+  background: #353535;
+}
+
+#mynav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mynav ul li a:hover {
+  color: #FF679B;
+}
+
+#mynav ul .active {
+  color: #FF679B;
+}
+
+@media (max-width: 767px) {
+  #mynav ul {
+    margin-top: 20px;
+  }
+
+  #mynav ul li a {
+    padding-left: 0;
+  }
+}
+
+/* header section end */
+
+/* banner section start */
+.banner_item {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh;
+}
+
+.banner_text {
+  color: #f1f1f1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.banner_text h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.banner_text a,
+.video_more a {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 2px;
+}
+
+.banner_text a:hover,
+.video_more a:hover {
+  background: #FF679B;
+  color: #fff;
+  border: 1px solid #FF679B;
+}
+
+/* banner section end */
+
+/* events section start */
+#event {
+  padding: 80px 0;
+}
+
+.event_item h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #FF679B;
+}
+
+.event_item p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .event-time {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .event_item {
+    margin-top: 30px;
+  }
+
+  .about_info {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* events section end */
+
+/* about section start */
+#about {
+  background: url(../images/about_img.jpg);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 80px 0;
+}
+
+.about_info {
+  color: #fff;
+}
+
+.about_info p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.about_heading h2 {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* about section end */
+
+/* team section start */
+#team {
+  padding: 80px 0;
+}
+
+.team_member {
+  margin-top: 30px;
+}
+
+.team_member img {
+  height: 315px;
+}
+
+.member_text {
+  margin-top: 10px;
+}
+
+/* team section end */
+
+/* gallery section start */
+#gallery {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+
+.gallery_items {
+  margin-top: 20px;
+}
+
+#gallery img {
+  width: 100%;
+  background: #f1f1f1;
+  margin-top: 20px;
+}
+
+/* gallery section end */
+
+/* videos section start */
+#videos {
+  background: url(../images/media_img.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed;
+  padding: 80px 0;
+}
+
+#videos .section_heading h2 {
+  color: #fff;
+  border-color: #fff;
+}
+
+.videos_items {
+  margin-top: 30px;
+  p
+}
+
+.video_more {
+  margin-top: 40px;
+}
+
+/* videos section end */
+
+/* contact section start */
+#contact {
+  padding: 80px 0;
+  position: relative;
+}
+
+#contact .section_heading {
+  margin-bottom: 30px;
+}
+
+.contact_form {
+  background: rgba(75, 202, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contact_form input {
+  width: 570px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.contact_form textarea {
+  width: 570px;
+  height: 150px;
+  resize: none;
+}
+
+.contact_form .submit {
+  margin: 20px auto;
+  background: #FF679B;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  width: 190px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* contact section end */
+
+/* footer section start */
+footer {
+  background: url(../images/footer_img.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.footer_mid span {
+  margin: 0 20px;
+}
+
+.footer_mid span i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.social {
+  text-align: right;
+}
+
+.social a {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social i {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.social a:hover {
+  color: #FF679B;
+}
+
+/* footer section end  */
